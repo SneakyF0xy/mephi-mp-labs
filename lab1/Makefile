@@ -9,14 +9,13 @@ seq: libseq.so
 
 test: libseq.so
 	$(CXX) $(CXXFLAGS) test/*.cpp ./$(BUILD)/libseq.so \
-	$(shell pkg-config --cflags --libs gtest) \
-	-lstdc++ \
+	-lgtest \
 	-lgtest_main \
 	-o $(BUILD)/test
 	
 libseq.so:
 	mkdir -p $(BUILD)
-	$(CXX) $(CXXFLAGS) -fPIC -shared src/*.h src/sort/* -o $(BUILD)/libseq.so
+	$(CXX) $(CXXFLAGS) -fPIC -shared src/sequence.cpp src/*.h src/sort/* -o $(BUILD)/libseq.so
 
 run:
 	LD_LIBRARY_PATH=$(BUILD) ./$(BUILD)/seq

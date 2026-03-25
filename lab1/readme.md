@@ -22,5 +22,5 @@ docker run seq all run test-run
 
 ---
 
-<img alt="Pikachu" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/10.png" width="75">
+<img alt="Pikachu" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/12.png" width="75">
 
