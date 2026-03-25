@@ -17,7 +17,8 @@
       {
         devShells.default = pkgs.mkShell {
           nativeBuildInputs = with pkgs; [
-            gcc13
+            bear # compile_commands - LSP
+            gcc14
             gnumake
             cmake            
             zlib
