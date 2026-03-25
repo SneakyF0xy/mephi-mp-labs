@@ -13,7 +13,7 @@ Department of cryptography and security of computer systems
 Table of contents:
 
 + [Lab0](/lab0/) - create abstract type sequence (#oop, #unit-tests)
-
++ [Lab1](/lab1/) - sorting algorithms (#oop, #sort, #unit-tests)
 ---
 
 Suitable for NixOS development.
