@@ -7,7 +7,7 @@
 template <typename T> class ArraySequence : public Sequence<T> {
   T *data;
   int capacity;
-  int length;  // Added missing length member
+  int length;
 
 public:
   explicit ArraySequence(int size = 4);
@@ -27,7 +27,6 @@ public:
   void Set(int index, T item) override;
   void Remove(T item) override;
   
-  // Missing methods from Sequence base class
   int GetLength() const override;
   bool GetIsEmpty() const override;
 };
@@ -37,8 +36,8 @@ template <typename T> class ArraySortedSequence : public SortedSequence<T> {
   int UpperBound(const T &v) const;
 
 public:
-  ArraySortedSequence() : data(new ArraySequence<T>()) {}  // Add constructor
-  ~ArraySortedSequence() { delete data; }  // Add destructor
+  ArraySortedSequence() : data(new ArraySequence<T>()) {}
+  ~ArraySortedSequence() { delete data; }
   
   int GetLength() const override;
   bool GetIsEmpty() const override;
