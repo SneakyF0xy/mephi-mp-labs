@@ -14,6 +14,8 @@ Table of contents:
 
 + [Lab0](/lab0/) - create abstract type sequence (#oop, #unit-tests)
 + [Lab1](/lab1/) - sorting algorithms (#oop, #sort, #unit-tests)
++ [Lab2](/lab2/) - binary search, bst (#oop, #search, #unit-tests)
++ [Lab3](/lab3/) - simple multithreading examples (#thread, #simple)
 ---
 
 Suitable for NixOS development.

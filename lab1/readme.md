@@ -17,7 +17,7 @@ make test-run
 
 ```bash
 docker build -t seq .
-docker run seq all run test-run
+docker -it run seq all run test-run
 ```
 
 ---

@@ -9,7 +9,7 @@ class Sequence {
 
  public:
   virtual ~Sequence() = default;
-
+  
   virtual int GetLength() const = 0;
   virtual bool GetIsEmpty() const = 0;
   virtual T GetFirst() const = 0;
